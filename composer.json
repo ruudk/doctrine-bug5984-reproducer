@@ -1,0 +1,15 @@
+{
+    "name": "ruudk/doctrine-dbal-issue",
+    "require": {
+        "doctrine/dbal": "^3.6",
+        "ramsey/uuid-doctrine": "^2.0",
+        "doctrine/orm": "^2.14",
+        "symfony/cache": "^6.2"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ruudk\\DoctrineDbalIssue\\": "src/"
+        }
+    }
+}

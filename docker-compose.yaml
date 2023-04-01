@@ -1,0 +1,17 @@
+version: '3.3'
+
+services:
+    db:
+        image: mysql/mysql-server:8.0.28
+        command: --sql_mode="NO_ENGINE_SUBSTITUTION"
+        environment:
+            MYSQL_ROOT_PASSWORD: doctrine
+            MYSQL_DATABASE: doctrine
+            MYSQL_USER: doctrine
+            MYSQL_PASSWORD: doctrine
+        entrypoint:
+            sh -c "
+            /entrypoint.sh --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+            "
+        ports:
+            - 3306:3306
